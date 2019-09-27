@@ -1,35 +1,27 @@
 <template>
-    <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">YOHAN</b-navbar-brand>
-
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <!-- <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item> -->
-      </b-navbar-nav>
-
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <!-- <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-        </b-nav-form> -->
-
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">About</b-nav-item>
-        <b-nav-item href="#">Project</b-nav-item>
-        <b-nav-item href="#">Experience</b-nav-item>
-        <b-nav-item href="#">Contact</b-nav-item>
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">ID</b-dropdown-item>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">SA</b-dropdown-item>          
-        </b-nav-item-dropdown>        
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
-    </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nuxt-link class="navbar-brand" to="/"> YOHAN APIYANDI</nuxt-link>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <nuxt-link class="nav-link" to="/"> Home</nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/about"> About</nuxt-link>
+      </li>          
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/projects"> Projects</nuxt-link>
+      </li>          
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/experience"> Download CV</nuxt-link>
+      </li>          
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/contact"> Contact</nuxt-link>
+      </li>          
+    </ul>
+  </div>
+</nav>
 </template>

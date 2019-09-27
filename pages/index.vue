@@ -1,7 +1,7 @@
 <template>
-  <div class="container text-center">
-      <h1 class="title">Hi, I'am Yohan Apriyandi</h1>
-      <h2 class="subtitle">a <b> Full Stack Web Developer</b> based in Kuningan, West Java, Indonesia.</h2>
+  <div class="container">    
+      <h1 class="title" tex>Hi, I'am Yohan Apriyandi</h1>    
+      <h2 class="subtitle">a <b> Full Stack Web Developer</b> based in Kuningan, West Java, Indonesia.</h2>    
   </div>
 </template>
 
